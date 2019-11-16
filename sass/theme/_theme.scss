@@ -1,1 +1,274 @@
-// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+body{
+    padding: 0;
+    margin: 0;
+    font-family: $font-stack;
+    background-image: linear-gradient($gray-700, $black);
+    font-size: 14px;
+    line-height: 25px;
+    color: $light;
+}
+
+.py-6 {
+    padding: 4rem 0;
+}
+.py-7 {
+    padding: 5.5rem 0;
+}
+.py-8 {
+    padding: 6rem 0;
+}
+
+.pt-6 {
+    padding-top: 4rem;
+}
+.pt-7 {
+    padding-top: 5.5rem;
+}
+.pt-8 {
+    padding-top: 6rem;
+}
+
+.pb-6 {
+    padding-bottom: 4rem;
+}
+.pb-7 {
+    padding-bottom: 5.5rem;
+}
+.pb-8 {
+    padding-bottom: 6rem;
+}
+
+p{
+    margin: 0;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
+/*===================================================================NAVBAR*/
+.navbar{
+    padding: 0;
+    background: $white !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.5s;
+    box-shadow: $gray-300 0px 0px 10px 5px;
+}
+
+.navbar-toggler{
+    border: none !important;
+    outline: none !important;
+}
+
+nav{
+    z-index: 100;
+}
+
+.nav-item{
+    transition: 0.5s;
+
+    a{
+        transition: 0.5s;
+        font-size: 16px;
+    }
+}
+
+.nav-item:hover{
+    background-color: $gray-200;
+
+    a{
+        color: $primary !important;
+    }
+}
+
+.active{
+    text-decoration: line-through;
+}
+/*===================================================================NAVBAR*/
+
+/*=====================================================================HERO*/
+.hero{
+    background-color: $black;
+}
+
+hr{
+    border-top: 1px solid $white !important;
+}
+
+.hero-landing{
+    height: 270px;
+    background-image: url('../../assets/img/hero-land1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+ 
+}
+
+h1{
+    font-size: 50px;
+    font-family: 'Great Vibes', cursive;
+    color: $primary;
+}
+
+h2{
+    font-size: 50px;
+    font-family: 'Great Vibes', cursive;
+    color: $primary;
+}
+
+h3{
+    font-size: 50px;
+    font-family: 'Great Vibes', cursive;
+    color: $primary;
+}
+
+#bg-logo{
+    background-image: url('../../assets/img/bg-logo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*=====================================================================HERO*/
+
+/*==================================================================SERVIZI*/
+a{
+    &.link-collapse{
+        background-color: $gray-200 !important;
+        color: $primary;
+        border-radius: 0.5rem !important;
+    }
+
+    &.list-group-item{
+        border: inherit !important;
+    }
+}
+
+.card{
+    background: $gray-900;
+    border-radius: 0.5rem !important;
+    border: none !important;
+    transition: 0.5s;
+}
+
+.card:hover{
+    box-shadow: $gray-300 0px 0px 10px 5px;
+}
+
+.staff{
+    img{
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+}
+/*==================================================================SERVIZI*/
+
+/*================================================================CHI SIAMO*/
+.chi-siamo{
+    background-color: white;
+}
+/*================================================================CHI SIAMO*/
+
+/*===================================================================FOOTER*/
+
+.footer-text{
+    ul{
+        li{
+            list-style: none;
+        }
+    }
+}
+/*===================================================================FOOTER*/
+
+small{
+    color: $light;
+}
+
+.credit{
+    background-color: $black;
+}
+
+.contattaci-banner{
+    background-color: $primary;
+    transition: 0.5s;
+
+    a{
+        color: $black;
+        transition: 0.5s;
+    }
+}
+.contattaci-banner:hover{
+    background-color: white;
+}
+
+.form{
+    width: 100%;
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+
+    input{
+        width: 100%;
+        height: 100%;
+        color: $dark;
+        padding-top: 20px;
+        border: none;
+        outline: none;
+        background-color: white !important;
+    }
+
+    label{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        border-bottom: 1px solid black;
+    }
+
+    label::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 100%;
+        width: 100%;
+        border-bottom: 3px solid $primary;
+        transform: translateX(-100% );
+        transition: all 0.5s ease;
+    }
+}
+
+.content-name{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.5s ease;
+}
+
+.form input:focus + .label-name{
+    .content-name{
+        transform: translateY(-100%);
+        font-size: 14px;
+        color: $primary;
+    }
+}
+
+.form input:valid + .label-name{
+    .content-name{
+        transform: translateY(-100%);
+        font-size: 14px;
+        color: $primary;
+    }
+}
+
+.form input:focus + .label-name::after{
+    transform: translateX(0%);
+}
+.form input:valid + .label-name::after{
+    transform: translateX(0%);
+}
+
+
+
