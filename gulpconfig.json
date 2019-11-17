@@ -1,6 +1,6 @@
 {
 	"browserSyncOptions": {
-		"proxy": "localhost:8888/wp-etoile/",
+		"proxy": "http://localhost:8888/wp-etoile/",
 		"notify": false
 	},
 	"browserSyncWatchFiles": ["./css/*.min.css", "./js/*.min.js", "./**/*.php"],

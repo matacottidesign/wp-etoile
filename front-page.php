@@ -20,6 +20,8 @@ get_header();
 
 <?php while ( have_posts() ) : the_post(); ?>
 
+<?php get_template_part('global-templates/carousel-top'); ?>
+
 <div class="pt-5">
     <div class="container">
         <!--CHI SIAMO-->
@@ -35,9 +37,5 @@ get_header();
 </div>
 
 <?php endwhile; ?>
-
-
-
-
 
 <?php get_footer(); ?> 
