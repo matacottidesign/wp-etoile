@@ -12,5 +12,5 @@
     </div>
 </div>
 
-<hr class="my-5">
+<hr class="mt-5 mb-3">
 

@@ -1,6 +1,6 @@
 <div id="accordionExample">
 <!-- data-parent="#accordionExample" è la proprietà che fa in modo che alterna i testi senza incolonnarli in sequenza -->
-    <div class="row">
+    <div class="row" style="margin-left: inherit !important;">
 
         <!--DICONO DI NOI-->
         <div class="col-12 col-md-6 list-group list-group-flush">
@@ -8,7 +8,7 @@
                 <?php 
                 $image = get_field('immagine_main');
                 if( !empty( $image ) ): ?>
-                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" width="90px" />
+                    <img class="mt-3" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" width="90px" />
                 <?php endif; ?>
             </div>
             <div class="text-center">
@@ -23,15 +23,14 @@
             </div>
             <?php include 'gallery-main.php' ?>
         </div>
-        </div>
 
-        <!--DICONO DI NOI-->
+        <!--LE NOSTRE VINCITE-->
         <div class="col-12 col-md-6 list-group list-group-flush">
             <div class="d-flex justify-content-center align-items-center pb-3">
                 <?php 
                 $image = get_field('immagine2_main');
                 if( !empty( $image ) ): ?>
-                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" width="53px" />
+                    <img class="mt-3" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" width="53px" />
                 <?php endif; ?>
             </div>
             <div class="text-center">

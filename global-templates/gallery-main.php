@@ -53,5 +53,5 @@
         // no rows found
     endif;
     ?>      
-
+</div>
 </div>
