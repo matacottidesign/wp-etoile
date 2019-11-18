@@ -21,7 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="full-width-page-wrapper">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content">
+	<div>
 
 		<div class="row">
 
@@ -37,6 +37,71 @@ $container = get_theme_mod( 'understrap_container_type' );
                         </div>
 
 						<?php get_template_part('page-templates/variant-banner'); ?>
+                        
+                        <!--//////////////////////////////////////////////////////////////////////////////////-->
+                        <div class="container">
+                        <div class="row py-5">
+                            <div class="col-12 col-lg-8">
+                                <h3><?php the_field('titolo_expo'); ?></h3>
+                                <?php the_field('descrizione_expo'); ?>
+                            </div>
+                            <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
+                                <?php 
+                                $image = get_field('immagine_expo');
+                                if( !empty( $image ) ): ?>
+                                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" width="140px" />
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                        <!--//////////////////////////////////////////////////////////////////////////////////-->
+                        <?php
+                        // check if the repeater field has rows of data
+                        if( have_rows('ripetitore_expo') ): ?> 
+                        <?php
+                        // loop through the rows of data
+                        while ( have_rows('ripetitore_expo') ) : the_row();
+                            $Id = rand();
+                            $img = get_sub_field('galleria_rip');
+
+                        if( $img ): ?> 
+
+                            <h3 class="mt-5"><?php the_sub_field('titolo_rip'); ?></h3>
+
+                            <!--CAROSELLO-->
+                            <div id="<?php echo 'carousel' . $Id ?>" class="carousel slide" data-parent="#accordionExample">
+                                <div class="carousel-inner">
+
+                                    <?php $i = 0; foreach( $img as $pic ): ?>
+
+                                        <div class="carousel-item <?php echo ($i == 0) ? 'active' : ''; ?>">
+                                            <img class="d-block w-100" src="<?php echo $pic['url']; ?>" alt="<?php echo $pic['alt']; ?>" />
+                                        </div>
+                                        <div class="pulsanti-slide">
+                                            <a class="carousel-control-prev" href="<?php echo '#' . 'carousel' . $Id ?>" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="<?php echo '#' . 'carousel' . $Id ?>" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                        <!--END_CAROSELLO-->     
+                                    <?php $i++; endforeach; ?>         
+                                </div>
+                            </div>
+                        <?php endif;                                 
+                        endwhile;
+                        else :
+                            // no rows found
+                        endif;
+                        ?>      
+                        <!--//////////////////////////////////////////////////////////////////////////////////-->
+                        <h3 class="mt-5"><?php the_field('titolo_premi_expo'); ?></h3>
+                        <?php the_field('descrizione_premi_expo'); ?>
+                        <hr class="my-5">
+                        </div>
+                        <!--//////////////////////////////////////////////////////////////////////////////////-->
 
 					<?php endwhile; // end of the loop. ?>
 

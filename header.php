@@ -25,6 +25,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,600,600i,700,900&display=swap" rel="stylesheet">
   	<link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
+
+	<link href="css/theme.min.css" rel="stylesheet">
+  	<script src="assets/components/modernizr/modernizr.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
