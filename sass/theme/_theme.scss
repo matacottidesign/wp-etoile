@@ -125,7 +125,8 @@ h3{
 }
 
 #bg-logo{
-    background-image: url('../../assets/img/bg-logo.jpg');
+    //background-image: url('../../assets/img/bg-logo.jpg');
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/bg-logo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }

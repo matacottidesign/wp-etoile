@@ -34,9 +34,6 @@
             </div>
           </div>
           <div class="col-12 col-md-6">
-                        
-         
-          
           <?php
             // check if the repeater field has rows of data
             if( have_rows('car') ): ?> 
@@ -66,15 +63,6 @@
                     // no rows found
                 endif;
                 ?>
-
-            
-
-              
-                
-                  
-                 
-                
-              
           </div>
         </div>
       </div>
