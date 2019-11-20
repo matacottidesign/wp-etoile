@@ -30,7 +30,7 @@
                 <?php 
                 $image = get_field('immagine2_main');
                 if( !empty( $image ) ): ?>
-                    <img class="mt-3" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" width="53px" />
+                    <img class="mt-3" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" width="54px" />
                 <?php endif; ?>
             </div>
             <div class="text-center">
