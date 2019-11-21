@@ -31,10 +31,23 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<?php while ( have_posts() ) : the_post(); ?>
 
-						<!--CONTENUTO INIZIALE-->
-                        <div class="container">
-                            <?php the_content(); ?>
+                    <div class="container">
+                        <div class="row py-8">
+                            <div class="col-12 col-lg-8">
+                                <h3 class="pb-3"><?php the_field('titolo_contatti'); ?></h3>
+                                <?php the_field('descrizione_contatti'); ?>
+                            </div>
+                            <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
+                                <?php 
+                                $image = get_field('immagine_contatti');
+                                if( !empty( $image ) ): ?>
+                                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" width="130px" />
+                                <?php endif; ?>
+                            </div>
                         </div>
+                    </div>
+
+                        <?php get_template_part('global-templates/form-contatti'); ?>
 
 					<?php endwhile; // end of the loop. ?>
 
