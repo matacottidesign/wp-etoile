@@ -40,14 +40,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 						<div class="container">
 							<div class="py-8">
-								<h3><?php the_field('titolo_maschi'); ?></h3>
+								<h3 class="text-center"><?php the_field('titolo_maschi'); ?></h3>
 								<?php the_field('descrizione_maschi'); ?>
 								
+								<div class="text-center">
 								<?php 
-								$link = get_field('link_maschi');
+								$link = get_field('link_maschi'); 
 								if( $link ): ?>
-									<a href="<?php echo esc_url( $link ); ?>">Femmine ></a>
+									<a class="mx-2" href="<?php echo esc_url( $link ); ?>">Femmine ></a>
 								<?php endif; ?>
+								</div>
 							</div>
 						</div>
 
