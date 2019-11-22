@@ -90,7 +90,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                                     <?php $i++; endforeach; ?>         
                                 </div>
                             </div>
-                        <?php endif;                                 
+                        <?php endif;    
+                                                     
                         endwhile;
                         else :
                             // no rows found

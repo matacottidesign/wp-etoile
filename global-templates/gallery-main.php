@@ -6,7 +6,7 @@
         <?php
         // loop through the rows of data
         while ( have_rows('items') ) : the_row();
-            $Id = rand(1,99999999999999999);
+            $Id = rand();
             $img = get_sub_field('galleria_items');
 
         if( $img ): ?> 

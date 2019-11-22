@@ -36,6 +36,25 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <?php the_content(); ?>
                         </div>
 
+						<?php get_template_part('page-templates/variant-banner'); ?>
+
+						<div class="container text-center">
+							<h3 class="pt-8 pb-3"><?php the_field('titolo_maschi'); ?></h3>
+							<?php the_field('descrizione_maschi'); ?>
+							
+							<?php 
+							$link = get_field('link_maschi');
+							if( $link ): ?>
+								<a class="px-4" href="<?php echo esc_url( $link ); ?>">Femmine ></a>
+							<?php endif; ?>
+						</div>
+
+						<?php get_template_part('global-templates/card-maschi'); ?>
+
+						<div class="container">
+							<hr class="my-5">
+						</div>
+
 					<?php endwhile; // end of the loop. ?>
 
 				</main><!-- #main -->
