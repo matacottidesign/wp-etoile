@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row py-8">
     <div class="col-12 col-md-6">
         <h2><?php the_field('titolo_presentazione'); ?></h2>
         <?php the_field('descrizione_presentazione'); ?>

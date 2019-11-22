@@ -1,6 +1,4 @@
-<hr class="my-5">
-
-<div class="row">
+<div class="row py-8">
     <div class="col-12 col-md-6">
         <h2><?php the_field('titolo_social'); ?></h2>
         <?php the_field('descrizione_social'); ?>
@@ -16,5 +14,3 @@
         <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FEtoile-Blanche-Cattery-551253915324964%2F&tabs=timeline&width=500px&height=500px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500px" height="500px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
     </div>
 </div>
-
-<hr class="my-5">

@@ -1,6 +1,6 @@
 <div class="pt-8">
     <div class="container">
-    <form action="">
+    <form action="form-contatti.php" method="post">
         <div class="row">
             <div class="col-12 col-lg-6">
 

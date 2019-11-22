@@ -32,7 +32,10 @@ get_header();
         <?php get_template_part('global-templates/main'); ?>
 
         <!--FACEBOOK-->
+        <hr class="my-5">
         <?php get_template_part('global-templates/facebook'); ?>
+        <hr class="my-5">
+        
     </div>
 </div>
 

@@ -40,7 +40,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         
                         <!--//////////////////////////////////////////////////////////////////////////////////-->
                         <div class="container">
-                        <div class="row py-5">
+                        <div class="row py-8">
                             <div class="col-12 col-lg-8">
                                 <h3><?php the_field('titolo_expo'); ?></h3>
                                 <?php the_field('descrizione_expo'); ?>
@@ -54,6 +54,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             </div>
                         </div>
                         <!--//////////////////////////////////////////////////////////////////////////////////-->
+                        <div class="pb-8">
                         <?php
                         // check if the repeater field has rows of data
                         if( have_rows('ripetitore_expo') ): ?> 
@@ -97,6 +98,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             // no rows found
                         endif;
                         ?>      
+                        </div>
                         <!--//////////////////////////////////////////////////////////////////////////////////-->
                         <h3 class="mt-5"><?php the_field('titolo_premi_expo'); ?></h3>
                         <?php the_field('descrizione_premi_expo'); ?>

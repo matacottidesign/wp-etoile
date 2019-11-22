@@ -31,6 +31,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<?php while ( have_posts() ) : the_post(); ?>
 
+                    <?php get_template_part('page-templates/variant-banner'); ?>
+
                     <div class="container">
                         <div class="row py-8">
                             <div class="col-12 col-lg-8">
