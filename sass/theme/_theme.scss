@@ -126,8 +126,12 @@ h3{
     font-size: 50px;
     font-family: 'Great Vibes', cursive;
     color: $primary;
-    text-shadow: 1px 1px 10px #fff;
+    text-shadow: 1px 1px 10px #fff; 
     animation: pulse 1s infinite;
+}
+
+h4, h5, h6{
+    font-family: 'Great Vibes', cursive;
 }
 
 #bg-logo{

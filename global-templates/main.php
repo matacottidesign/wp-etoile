@@ -43,12 +43,7 @@
                             Vedi tutto >
                         </a>
                     </div>
-
-                    <div class="collapse" id="collapseExample2" data-parent="#accordionExample">
-                        <div class="card card-body text-left">
-                            <?php the_field('premi2_main'); ?>
-                        </div>
-                    </div>
+                    <?php include 'gallery-risultati.php' ?>
                 </div> 
             </div>
 

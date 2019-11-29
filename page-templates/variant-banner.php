@@ -4,7 +4,7 @@
         <div class="row">
           <div class="col-12 col-sm-6 d-flex align-items-center">
             <div class="pt-7 description">
-                <h4>Allevamento gatti persiani</h4>
+                <h3>Allevamento gatti persiani</h3>
                 <div class="pt-4">
                     <a href="#" class="mr-5">Scopri di più ></a>
                     <a href="#">Contattaci ></a>
