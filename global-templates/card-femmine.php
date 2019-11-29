@@ -1,4 +1,4 @@
-<div class="py-6">
+<div>
     <div class="container">
 
     <?php if( have_rows('card_femmine') ): ?>
@@ -23,8 +23,6 @@
                         <div class="col-12 col-md-8">
                             <div class="card-body">
                                 <h4><?php the_sub_field('nome_card_F'); ?></h4>
-                                <?php the_sub_field('descrizione_card_F'); ?>
-                                <hr>
                                 <a class="link-collapse list-group-item list-group-item-action bg-light" data-toggle="collapse" href="#<?php echo "collapseExample2-" . $id; ?>" role="button" aria-expanded="true" aria-controls="<?php echo "collapseExample2-" . $id; ?>">Galleria ></a>
                             </div>
                         </div>

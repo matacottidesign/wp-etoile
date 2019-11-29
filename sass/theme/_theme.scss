@@ -79,7 +79,7 @@ nav{
     background-color: $gray-200;
 
     a{
-        color: $primary !important;
+        color: $dark !important;
     }
 }
 
@@ -110,18 +110,24 @@ h1{
     font-size: 50px;
     font-family: 'Great Vibes', cursive;
     color: $primary;
+    text-shadow: 1px 1px 10px #fff;
+    animation: pulse 1s infinite;
 }
  
 h2{
     font-size: 50px;
     font-family: 'Great Vibes', cursive;
     color: $primary;
+    text-shadow: 1px 1px 10px #fff;
+    animation: 1s infinite;
 }
 
 h3{
     font-size: 50px;
     font-family: 'Great Vibes', cursive;
     color: $primary;
+    text-shadow: 1px 1px 10px #fff;
+    animation: pulse 1s infinite;
 }
 
 #bg-logo{
@@ -136,7 +142,7 @@ h3{
 a{
     &.link-collapse{
         background-color: $gray-200 !important;
-        color: $primary;
+        color: $dark !important;
         border-radius: 0.5rem !important;
     }
 
@@ -168,6 +174,11 @@ a{
 .chi-siamo{
     background-color: white;
 }
+
+.testo-presentazione{
+    height: 500px !important;
+    overflow: hidden;
+}
 /*================================================================CHI SIAMO*/
 
 /*===================================================================FOOTER*/
@@ -194,7 +205,7 @@ small{
     transition: 0.5s;
 
     a{
-        color: $black;
+        color: $dark;
         transition: 0.5s;
     }
 }
@@ -269,6 +280,16 @@ small{
 }
 .form input:valid + .label-name::after{
     transform: translateX(0%);
+}
+
+div{
+    a{
+        color: goldenrod;
+    }
+    
+}
+a:hover{
+    color: $white;
 }
 
 
