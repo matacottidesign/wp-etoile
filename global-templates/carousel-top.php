@@ -15,7 +15,7 @@
                     <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" width="540px" />
                 <?php endif; ?>
 
-                <h4><?php the_field('sottotitolo_car'); ?></h4>
+                <h4 class="subtitle"><?php the_field('sottotitolo_car'); ?></h4>
 
                 <div class="pt-4">
                     <?php 

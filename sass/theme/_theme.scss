@@ -116,9 +116,9 @@ h1{
  
 h2{
     font-size: 50px;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Great Vibes', cursive; 
     color: $primary;
-    text-shadow: 1px 1px 10px #fff;
+    text-shadow: 1px 1px 10px #fff; 
     animation: 1s infinite;
 }
 
@@ -126,7 +126,7 @@ h3{
     font-size: 50px;
     font-family: 'Great Vibes', cursive;
     color: $primary;
-    text-shadow: 1px 1px 10px #fff; 
+    text-shadow: 1px 1px 10px #fff;
     animation: pulse 1s infinite;
 }
 
@@ -139,6 +139,10 @@ h4, h5, h6{
     background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/bg-logo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.subtitle{
+    font-family: font-family,Poppins,sans-serif;
 }
 /*=====================================================================HERO*/
 
