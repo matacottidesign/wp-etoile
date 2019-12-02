@@ -209,7 +209,7 @@ small{
 }
 
 .contattaci-banner{
-    background-color: $primary;
+    background-color: $white;
     transition: 0.5s;
 
     a{
@@ -218,7 +218,11 @@ small{
     }
 }
 .contattaci-banner:hover{
-    background-color: white;
+    background-color: $dark;
+
+    a{
+        color: goldenrod;
+    }
 }
 
 .form{
